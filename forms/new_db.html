@@ -1,0 +1,80 @@
+<form class="form-horizontal col-md-12  align-self-center" method="post">
+<fieldset>
+
+<!-- Form Name -->
+<legend>{{AddDB}}</legend>
+
+<!-- Text input-->
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="DBName">{{DBName}}</label>  
+  <div class="col-md-9">
+  <input id="DBName" name="DBName" placeholder="{{phDBName}}" class="form-control input-md" type="text">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="UserName">{{UserName}}</label>  
+  <div class="col-md-4">
+  <input id="UserName" name="UserName" placeholder="{{phUserName}}" class="form-control input-md" type="text" required="">
+  </div>
+  <label class="col-md-2 control-label" for="asSysDBA">{{asSysDBA}}</label>
+  <div class="col-md-3"> 
+    <label class="radio-inline" for="asSysDBA-0">
+      <input name="asSysDBA" id="asSysDBA-0" value="1" checked="checked" type="radio">
+      {{YES}}
+    </label> 
+    <label class="radio-inline" for="asSysDBA-1">
+      <input name="asSysDBA" id="asSysDBA-1" value="2" type="radio">
+      {{NO}}
+    </label> 
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="UserPass">{{UserPass}}</label>
+  <div class="col-md-9">
+    <input id="UserPass" name="UserPass" placeholder="{{phUserPass}}" class="form-control input-md" type="password" required="">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="HostName">{{HostName}}</label>  
+  <div class="col-md-4">
+  <input id="HostName" name="HostName" placeholder="{{phHostName}}" class="form-control input-md" type="text" required="">
+  </div>
+  <label class="col-md-2 control-label" for="PortNbr">{{PortNbr}}</label>  
+  <div class="col-md-3">
+  <input id="PortNbr" name="PortNbr" placeholder="{{phPortNbr}}" class="form-control input-md" type="text">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="DBSID">{{DBSID}}</label>  
+  <div class="col-md-4">
+  <input id="DBSID" name="DBSID" placeholder="{{phDBSID}}" class="form-control input-md" type="text" required="">
+  </div>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="service-0">
+      <input name="service" id="service-0" value="1" checked="checked" type="radio">
+      {{ServiceName}}
+    </label> 
+    <label class="radio-inline" for="service-1">
+      <input name="service" id="service-1" value="2" type="radio">
+      {{SID}}
+    </label> 
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="form-group row">
+  <label class="col-md-3 control-label" for="btnOK">{{btnOKWhat}}</label>
+  <div class="col-md-4">
+    <button id="btnOK" name="btnOK" class="btn btn-primary">{{OK}}</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

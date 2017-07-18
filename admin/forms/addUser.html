@@ -1,0 +1,72 @@
+
+<form class="form-horizontal col-md-12" method="post" action="?page={{this_page}}">
+<fieldset>
+
+<!-- Form Name -->
+<legend>{{addUser}}</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-1 control-label" for="uname"><span class="fa fa-user"></span> </label>  
+  <div class="col-md-11">
+  <input id="uname" name="uname" placeholder="{{phName}}" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-1 control-label" for="upsw"><span class="fa fa-lock"></span> </label>
+  <div class="col-md-11">
+    <input id="upsw" name="upsw" placeholder="{{phPass}}" class="form-control input-md" required="" type="password">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-1 control-label" for="upsw"><span class="fa fa-lock"></span> </label>
+  <div class="col-md-11">
+    <input id="upsw" name="upsw" placeholder="{{phConfPass}}" class="form-control input-md" required="" type="password">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-1 control-label" for="auth"><span class="fa fa-id-card-o"></span> </label>
+  <div class="col-md-11">
+    <label class="checkbox-inline" for="auth-0">
+      <input name="auth" id="auth-0" value="1" type="checkbox">
+      {{prReader}}
+    </label>
+    <label class="checkbox-inline" for="auth-1">
+      <input name="auth" id="auth-1" value="2" type="checkbox">
+      {{prUser}}
+    </label>
+    <label class="checkbox-inline" for="auth-2">
+      <input name="auth" id="auth-2" value="3" type="checkbox">
+      {{prUserAdm}}
+    </label>
+    <label class="checkbox-inline" for="auth-3">
+      <input name="auth" id="auth-3" value="4" type="checkbox">
+      {{prDBAdm}}
+    </label>
+    <label class="checkbox-inline" for="auth-4">
+      <input name="auth" id="auth-4" value="5" type="checkbox">
+      {{prAdmWD}}
+    </label>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-1 control-label" for="btnOk"></label>
+  <div class="col-md-11">
+    <button id="btnOk" name="btnOk" class="btn btn-primary">{{btnOK}}</button>
+    <button id="btnCancel" name="btnCancel" class="btn btn-default">{{btnCancel}}</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
