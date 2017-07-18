@@ -1,0 +1,28 @@
+body {
+  color: #333333;
+}
+  
+.navbar-collapse, nav, navbar-nav {
+  height: 40px;
+}  
+
+.nav-item {
+  height: 30px;
+}
+
+.spantop {
+  margin-top: 50px;
+}
+  
+.icon-primary { color: #337ab7; }
+.icon-success { color: #5cb85c; }
+.icon-info    { color: #5bc0de; }
+.icon-warning { color: #f0ad4e; }
+.icon-danger  { color: #d9534f; }
+
+.dc-chart { fill: #333333; }
+  
+.dc-chart g.row text, .dc-chart g.pie-label-group text { 
+    color: #333333; 
+    fill: #333333; 
+}
